@@ -51,12 +51,16 @@ def clean_folder():
 
 
 # Main Program
-directory = ""
+if 'USERPROFILE' in os.environ:
+    directory = os.path.join(os.environ['USERPROFILE'], 'Desktop')
+else:
+    directory = ''
 
 app = QtWidgets.QApplication(sys.argv)
 MainWindow = QtWidgets.QMainWindow()
 ui = Ui_MainWindow()
 ui.setupUi(MainWindow)
+ui.txt_folder.setText(directory)
 ui.btn_select_folder.clicked.connect(select_folder)
 ui.btn_clean.clicked.connect(clean_folder)
 MainWindow.show()
