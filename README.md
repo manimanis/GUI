@@ -13,3 +13,9 @@ sa masse et sa hauteur.
 Dans le labo d'informatique, je fini toujours par avoir des dizaines d'icones 
 qui étouffent le bureau de Windows. Pour celà j'ai conçu ce petit utilitaire afin
 de rassembler tous les fichiers qui ne sont pas des raccourcis dans un dossier.
+
+## Password Generator
+
+C'est un utilitaire qui permet de générer des mots de passes.
+
+
