@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>311</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Password Generator</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="lbl_image">
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/images/password.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>false</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lbl_passwd">
+      <property name="styleSheet">
+       <string notr="true">text-align: center;
+font-size: 40px;</string>
+      </property>
+      <property name="text">
+       <string>...</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="lbl_copied">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(78, 154, 6);</string>
+      </property>
+      <property name="text">
+       <string>copied</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_generate">
+      <property name="styleSheet">
+       <string notr="true">font-size: 20pt;
+color: rgb(32, 74, 135);
+padding: 10px;</string>
+      </property>
+      <property name="text">
+       <string>Générer un mot de passe</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="btn_copy">
+      <property name="styleSheet">
+       <string notr="true">color: rgb(164, 0, 0);
+border-width: 1px;
+border-style: solid;
+border-color: rgb(204, 0, 0);
+background-color: rgb(238, 238, 236);
+padding: 5px;</string>
+      </property>
+      <property name="text">
+       <string>Copier</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
