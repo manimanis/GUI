@@ -14,12 +14,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(581, 553)
+        MainWindow.resize(581, 493)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.gridLayout_2 = QtWidgets.QGridLayout(self.centralwidget)
-        self.gridLayout_2.setContentsMargins(5, 5, 5, 5)
-        self.gridLayout_2.setSpacing(5)
+        self.gridLayout_2.setContentsMargins(2, 2, 2, 2)
+        self.gridLayout_2.setSpacing(2)
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.btn_marron4 = QtWidgets.QPushButton(self.centralwidget)
         self.btn_marron4.setStyleSheet("background-color: rgb(143, 89, 2);\n"
