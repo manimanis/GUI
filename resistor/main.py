@@ -75,7 +75,10 @@ def calc_resistor_value():
 def show_resistor_value():
     res = calc_resistor_value()
     if res != -10:
-        ui.lbl_resistor_val.setText(f"{res} Ω")
+        if res - int(res) != 0:
+            ui.lbl_resistor_val.setText(f"{res:.2f} Ω")
+        else:
+            ui.lbl_resistor_val.setText(f"{res} Ω")
     else:
         ui.lbl_resistor_val.setText('Valeur du résistor')
 
